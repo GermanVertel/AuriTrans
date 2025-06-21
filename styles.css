@@ -1,0 +1,342 @@
+/* Paleta: fondo #f7f8fa, blanco #fff, azul #3b82f6, azul hover #2563eb, texto #222, gris #e5e7eb */
+
+body {
+  background: #f7f8fa;
+  color: #222;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a { color: #3b82f6; text-decoration: none; }
+
+header.hero {
+  background: #fff;
+  box-shadow: 0 2px 8px #e5e7eb;
+  padding-bottom: 2em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 5vw 0 5vw;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #3b82f6;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar a {
+  color: #3b82f6;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+}
+
+.navbar a:hover, .btn-nav:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.btn-nav {
+  border: 1px solid #3b82f6;
+  background: #fff;
+  color: #3b82f6;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 2em 5vw 0 5vw;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+}
+
+.btn-main {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.8em 2em;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px #3b82f622;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.btn-main:hover, .btn-amazon:hover {
+  background: #2563eb;
+}
+
+.hero-img img {
+  width: 270px;
+  max-width: 90vw;
+  filter: drop-shadow(0 0 24px #3b82f644);
+  border-radius: 2em;
+  background: #f7f8fa;
+}
+
+.section, .features, .faq, .cta, .comparison-table {
+  background: #fff;
+  margin: 2em auto;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e5e7eb44;
+  max-width: 1100px;
+  padding: 2em 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+}
+
+.section-content, .section-img {
+  flex: 1 1 320px;
+}
+
+.section-img img {
+  width: 220px;
+  max-width: 80vw;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 16px #3b82f622);
+  border-radius: 1.5em;
+}
+
+.section-content h2 {
+  color: #3b82f6;
+  margin-bottom: 1em;
+}
+
+.section-content ul {
+  margin-bottom: 1em;
+  padding-left: 1.2em;
+}
+
+.features {
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.features h2 {
+  color: #3b82f6;
+  margin-bottom: 1.5em;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #f7f8fa;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #e5e7eb44;
+  padding: 1.5em 1em;
+  min-width: 200px;
+  max-width: 240px;
+  flex: 1 1 200px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.feature-card img {
+  width: 70px;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  background: #fff;
+  filter: drop-shadow(0 0 8px #3b82f622);
+}
+
+.feature-card h3 {
+  color: #222;
+  margin-bottom: 0.5em;
+}
+
+.comparison-table {
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.comparison-table h2 {
+  color: #3b82f6;
+  margin-bottom: 1.5em;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 1em 0.7em;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.comparison-table th {
+  background: #f7f8fa;
+  color: #222;
+  font-weight: 700;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.btn-amazon {
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.faq {
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 700px;
+}
+
+.faq h2 {
+  color: #3b82f6;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.faq details {
+  background: #f7f8fa;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  padding: 1em 1.5em;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid #e5e7eb;
+}
+
+.faq details[open] {
+  background: #e5e7eb;
+}
+
+.faq summary {
+  font-weight: bold;
+  font-size: 1.05rem;
+  outline: none;
+}
+
+.cta {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #3b82f6;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+}
+
+.cta .btn-main {
+  background: #fff;
+  color: #3b82f6;
+  border: 2px solid #fff;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta .btn-main:hover {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+footer {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-main, .section {
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em 3vw;
+  }
+  .features-grid {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    gap: 0.7em;
+    font-size: 0.98em;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-img img, .section-img img {
+    width: 150px;
+  }
+  .features, .section, .faq, .cta, .comparison-table {
+    padding: 1.2em 2vw;
+  }
+}
